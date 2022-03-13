@@ -15,18 +15,21 @@ html, body {
     clear: both;
 }
 
-/* HEADER */
-.header__content {
+a {
+    text-decoration: none;
+}
+
+.container {
     width: 80%;
     margin: auto;
 }
 
+/* HEADER */
 .header__logo {
     margin: 15px 0;
 }
 
 .header__logo a {
-    text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
     color: #002146;
@@ -57,7 +60,6 @@ html, body {
 }
 
 .header__content a {
-    text-decoration: none;
     color: black;
 }
 
@@ -71,11 +73,6 @@ html, body {
 /* WELCOME */
 .welcome {
     padding: 70px 0;
-}
-
-.welcome__content {
-    width: 80%;
-    margin: auto;
 }
 
 .welcome__text,
@@ -126,11 +123,6 @@ html, body {
     background-color: #f6f6f6;
 }
 
-.overview__content {
-    width: 80%;
-    margin: auto;
-}
-
 .overview__item {
     float: left;
     width: 25%;
@@ -169,11 +161,6 @@ html, body {
     padding: 70px 0;
 }
 
-.training__content {
-    width: 80%;
-    margin: auto;
-}
-
 .training__item {
     float: left;
     width: 25%;
@@ -190,7 +177,6 @@ html, body {
 }
 
 .training__card a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -205,11 +191,6 @@ html, body {
     padding: 70px 0;
 }
 
-.posts__content {
-    width: 80%;
-    margin: auto;
-}
-
 .posts__latest,
 .posts__events {
     float: left;
@@ -222,16 +203,24 @@ html, body {
 
 .posts__latest h2 {
     margin-bottom: 30px;
+    color: #1b1d2d;
+    font-size: 35px;
+    cursor: pointer;
 } 
 
 .posts__item {
     background: #ffffff;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+}
+
+.posts__card {
+    border-bottom: 2px solid #f6f6f6;
 }
 
 .posts__img {
     float: left;
     width: 30%;
+    cursor: pointer;
 }
 
 .posts__img img {
@@ -248,12 +237,20 @@ html, body {
 
 .posts__detail h3 {
     margin-bottom: 10px;
+    color: #1b1d2d;
+    cursor: pointer;
+}
+
+.posts__detail span {
+    color: #59595983;
 }
 
 .posts__detail p {
     margin-top: 15px;
     margin-bottom: 30px;
     line-height: 25px;
+    color: #595959;
+    cursor: pointer;
 }
 
 .posts__button {
@@ -277,6 +274,9 @@ html, body {
 
 .posts__events h2 {
     margin-bottom: 30px;
+    color: #1b1d2d;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .posts__item2 {
@@ -303,10 +303,12 @@ html, body {
 
     font-size: 30px;
     font-weight: bold;
+    color: #1b1d2d;
 }
 
 .posts__month {
     padding: 10px 20px;
+    color: #1b1d2d;
 }
 
 .posts__year {
@@ -327,29 +329,40 @@ html, body {
 
 .posts__detail2 h3 {
     margin-bottom: 20px;
+    color: #1b1d2d;
+    cursor: pointer;
 }
 
 .posts__detail2 p {
     line-height: 25px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.posts__detail2 span {
+    color: #002146;
+    font-weight: bold;
+}
+
+.posts__time {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-right: 20px;
+}
+
+.posts__city {
+    padding-left: 20px;
 }
 
 /* FOOTER */
 .footer {
     background-color: #002146;
-    color: white;
-    padding: 50px;
+    color: #f4f5f7;
+    padding: 70px;
     font-size: 20px;
 }
 
-.footer__content {
-    width: 80%;
-    margin: auto;
-}
-
-.footer__content hr {
-    border: 1px solid #f6c303;
-    border-style: groove;
+.footer__above {
+    border-bottom: 1px solid #f6c1033a;
 }
 
 .footer__contact,
@@ -393,10 +406,13 @@ html, body {
 
 .footer__featured a,
 .footer__quick a {
-    text-decoration: none;
-    color: white;
+    color: #f4f5f7;
 }
 
 .footer__copyrights {
     margin-top: 40px;
+}
+
+.footer__copyrights span {
+    color: rgba(255, 255, 255, 0.6);
 }

@@ -15,7 +15,7 @@
 <body>
     <!-- START HEADER -->
     <div class="header">
-        <div class="header__content">
+        <div class="header__content container">
             <div class="header__logo">
                 <a href="#">
                     <i class="fa fa-edit"></i>   
@@ -38,7 +38,7 @@
 
     <!-- START WELCOME -->
     <div class="welcome">
-        <div class="welcome__content">
+        <div class="welcome__content container">
             <div class="welcome__text">
                 <h2>Welcome To Our Campus</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam deserunt ad repudiandae! Consequatur, harum! Eius quae minus, vel soluta cupiditate perspiciatis accusamus laudantium possimus voluptatem maxime repudiandae hic animi ratione aut excepturi, atque laborum!</p>
@@ -58,7 +58,7 @@
 
     <!-- START OVERVIEW -->
     <div class="overview">
-        <div class="overview__content">
+        <div class="overview__content container">
             <div class="overview__item">
                 <div class="overview__card">
                     <div class="overview__number">
@@ -106,7 +106,7 @@
 
     <!-- START TRAINING -->
     <div class="training">
-        <div class="training__content">
+        <div class="training__content container">
             <div class="training__item">
                 <div class="training__card">
                     <a href="#" class="training__icon">
@@ -178,43 +178,47 @@
 
     <!-- START POSTS -->
     <div class="posts">
-        <div class="posts__content">
+        <div class="container">
             <div class="posts__latest">
                 <h2>Latest Posts</h2>
                 <div class="posts__item">
-                    <div class="posts__img">
-                        <img src="./img/g9.jpg" alt="post-latest-img">
+                    <div class="posts__card">
+                        <div class="posts__img">
+                            <img src="./img/g9.jpg" alt="post-latest-img">
+                        </div>
+                        <div class="posts__detail">
+                            <h3>Summer Course Starts</h3>
+                            <span>April 25, 2020</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="posts__detail">
-                        <h3>Summer Course Starts</h3>
-                        <span>April 25, 2020</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
-                    </div>
-                    <div class="clear"></div>
-                    <hr>
                 </div>              
                 <div class="posts__item">
-                    <div class="posts__img">
-                        <img src="./img/g9.jpg" alt="post-latest-img">
+                    <div class="posts__card">
+                        <div class="posts__img">
+                            <img src="./img/g10.jpg" alt="post-latest-img">
+                        </div>
+                        <div class="posts__detail">
+                            <h3>Summer Course Starts</h3>
+                            <span>April 25, 2020</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="posts__detail">
-                        <h3>Summer Course Starts</h3>
-                        <span>April 25, 2020</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
-                    </div>
-                    <div class="clear"></div>
-                    <hr>
                 </div>
                 <div class="posts__item">
-                    <div class="posts__img">
-                        <img src="./img/g9.jpg" alt="post-latest-img">
+                    <div class="posts__card">
+                        <div class="posts__img">
+                            <img src="./img/g8.jpg" alt="post-latest-img">
+                        </div>
+                        <div class="posts__detail">
+                            <h3>Summer Course Starts</h3>
+                            <span>April 25, 2020</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="posts__detail">
-                        <h3>Summer Course Starts</h3>
-                        <span>April 25, 2020</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit?</p>
-                    </div>
-                    <div class="clear"></div>
                 </div>
         
                 <div class="posts__button">
@@ -238,7 +242,7 @@
                     <div class="posts__detail2">
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt maiores molestias, reprehenderit doloremque soluta numquam quasi atque sint ducimus praesentium nam sequi quisquam aliquid vitae explicabo aut!</p>
-                        <span>7:00 - 10:00 | Melbourne, Australia</span>
+                        <span class="posts__time">7:00 - 10:00</span> <span class="posts__city">Melbourne, Australia</span>  
                     </div>  
                     <div class="clear"></div>               
                 </div>
@@ -257,7 +261,7 @@
                     <div class="posts__detail2">
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt maiores molestias, reprehenderit doloremque soluta numquam quasi atque sint ducimus praesentium nam sequi quisquam aliquid vitae explicabo aut!</p>
-                        <span>7:00 - 10:00 | Melbourne, Australia</span>
+                        <span class="posts__time">7:00 - 10:00</span> <span class="posts__city">Melbourne, Australia</span>
                     </div>  
                     <div class="clear"></div>               
                 </div>
@@ -265,14 +269,14 @@
                     <button>View All</button>
                 </div>
             </div>
-        </div>
-        <div class="clear"></div>
+            <div class="clear"></div>
+        </div> 
     </div>
     <!-- END POSTS -->
 
     <!-- START FOOTER -->
     <div class="footer">
-        <div class="footer__content">
+        <div class="footer__above container">
             <div class="footer__contact">
                 <h3>Contact Us</h3>
                 <div class="footer__address">
@@ -309,10 +313,10 @@
                 </ul>
             </div>
             <div class="clear"></div>
-            <hr>
-            <div class="footer__copyrights">
-                <p>&copy; 2020 Mastery. All rights reserved | Designed by W3layouts</p>
-            </div>
+        </div>
+
+        <div class="footer__copyrights container">
+            <p>&copy; 2020 Mastery. All rights reserved | Designed by <span>W3layouts</span></p>
         </div>
     </div>
     <!-- END FOOTER -->
